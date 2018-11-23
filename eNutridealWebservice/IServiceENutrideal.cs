@@ -32,6 +32,11 @@ namespace eNutridealWebservice
         [Description("Adicionar Refeição ao eNutrideal.")]
         void AddRefeicao(Refeicao refeicao);
 
+
+
+
+
+
         // DELETE REFEICAO
         [OperationContract(Name = "ApagarRefeicaoPorItem")]
         [WebInvoke(Method = "DELETE", UriTemplate = "/refeicao/{item}")]
@@ -42,12 +47,46 @@ namespace eNutridealWebservice
 
         //PESO IDEAL
         [OperationContract]
-        double calcularPesoIdeal(int idade, int altura, string genero);
+        double CalcularPesoIdeal(int idade, int altura, string genero);
 
         //CALORIAS POR DIA
         [OperationContract]
-        double calcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade);
+        double CalcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade);
         //PLANO CALORICO
+
+        [OperationContract]
+        void RecebeItem(string item);
+        [OperationContract]
+        void RecebeRestaurante(string restaurante);
+        [OperationContract]
+        void RecebeCaloria(string caloria);
+        [OperationContract]
+        void RecebeQuantidade(string quantidade);
+
+
+        [OperationContract]
+        void CriaXML(string restaurante, string item, string quantidade, string calorias);
+        [OperationContract]
+        void ConverteParaXML();
+
+
+        /*
+                [OperationContract]
+                List<string> RecebeListaRestaurantes(List<string> listRestaurantes);
+
+                [OperationContract]
+                List<string> RecebeListaItems(List<string> listItems);
+
+                [OperationContract]
+                List<string> RecebeListaQuantidades(List<string> listQuantidades);
+
+                [OperationContract]
+                List<string> RecebesListaCalorias(List<string> listCalorias);
+        */
+
+
+
+
 
     }
 
@@ -70,6 +109,16 @@ namespace eNutridealWebservice
         public string Quantidade { get; set; }
         [DataMember]
         public string Calorias { get; set; }
+
+
+        [DataMember]
+        public static List<string> listRestaurantes = new List<string>();
+        [DataMember]
+        public static List<string> listItems = new List<string>();
+        [DataMember]
+        public static List<string> listQuantidades = new List<string>();
+        [DataMember]
+        public static List<string> listCalorias = new List<string>();
 
         public override string ToString()
         {

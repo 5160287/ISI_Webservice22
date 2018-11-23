@@ -91,6 +91,38 @@ namespace eNutridealWebservice
             doc.Save(FILEPATH);
         }
 
+
+
+        public void CriaXML(string restaurante, string item, string quantidade, string calorias)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(FILEPATH);
+            XmlNode refeicoesNode = doc.SelectSingleNode("/refeicoes");
+            XmlElement refeicaoNode = doc.CreateElement("refeicao");
+            XmlElement restauranteNode = doc.CreateElement("restaurante");
+            restauranteNode.InnerText = restaurante;
+            refeicaoNode.AppendChild(restauranteNode);
+            XmlElement itemNode = doc.CreateElement("item");
+            itemNode.InnerText = item;
+            refeicaoNode.AppendChild(itemNode);
+            XmlElement quantidadeNode = doc.CreateElement("quantidade");
+            quantidadeNode.InnerText = quantidade;
+            refeicaoNode.AppendChild(quantidadeNode);
+            XmlElement caloriasNode = doc.CreateElement("calorias");
+            caloriasNode.InnerText = calorias;
+            refeicaoNode.AppendChild(caloriasNode);
+            refeicoesNode.AppendChild(refeicaoNode);
+            doc.Save(FILEPATH);
+        }
+
+
+
+
+
+
+
+
+
         public void DeleteRefeicao(string item) {
             XmlDocument doc = new XmlDocument();
             doc.Load(FILEPATH);
@@ -103,7 +135,7 @@ namespace eNutridealWebservice
             }
         }
 
-        public double calcularPesoIdeal(int idade, int altura, string genero)
+        public double CalcularPesoIdeal(int idade, int altura, string genero)
         {
             double resultado_final = 0;
             if (genero.Equals("Masculino"))
@@ -134,7 +166,7 @@ namespace eNutridealWebservice
             return resultado_final;
         }
 
-        public double calcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade)
+        public double CalcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade)
         {
             double resultado_incompleto = 0;
             double resultado_final = 0;
@@ -179,5 +211,76 @@ namespace eNutridealWebservice
 
             return resultado_final;
         }
+
+
+
+        public void RecebeRestaurante(string restaurante)
+        {
+            Refeicao.listRestaurantes.Add(restaurante);
+        }
+
+        public void RecebeItem(string item)
+        {
+            Refeicao.listItems.Add(item);
+        }
+
+        public void RecebeQuantidade(string quantidade)
+        {
+            Refeicao.listQuantidades.Add(quantidade);
+        }
+
+        public void RecebeCaloria(string caloria)
+        {
+            Refeicao.listCalorias.Add(caloria);
+        }
+
+
+
+
+        public void ConverteParaXML()
+        {
+            
+            for (int i = 0; i <= Refeicao.listRestaurantes.Count - 1; i++)
+            {
+                CriaXML(Refeicao.listRestaurantes[i], Refeicao.listItems[i], Refeicao.listQuantidades[i], Refeicao.listCalorias[i]);
+            }
+
+            Refeicao.listRestaurantes.Clear();
+            Refeicao.listItems.Clear();
+            Refeicao.listQuantidades.Clear();
+            Refeicao.listRestaurantes.Clear();
+
+        }
+
+
+
+
+
+        /*
+
+        public List<string> RecebeListaRestaurantes (List<string> listRestaurantes)
+        {
+            return listRestaurantes;
+        }
+
+        public List<string> RecebeListaQuantidades(List<string> listQuantidades)
+        {
+            return listQuantidades;
+        }
+
+        public List<string> RecebesListaCalorias(List<string> listCalorias)
+        {
+            return listCalorias;
+        }
+        */
+
+
+
+
+
+
+
+
+
     }
 }
