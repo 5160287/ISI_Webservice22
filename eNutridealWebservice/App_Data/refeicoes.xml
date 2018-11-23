@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<refeicoes>
+  <refeicao>
+    <restaurante>mac</restaurante>
+    <item>hamburge</item>
+    <quantidade>1</quantidade>
+    <calorias>512</calorias>
+  </refeicao>
+</refeicoes>
