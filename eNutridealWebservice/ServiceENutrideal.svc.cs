@@ -44,7 +44,7 @@ namespace eNutridealWebservice
             }
             return refeicoes;
         }
-        public List<Refeicao> GetRefeicao(string restaurante)
+        public List<Refeicao> GetRefeicaoPorRestaurante(string restaurante)
         {
             XmlDocument doc = new XmlDocument();
             doc.Load(FILEPATH);
@@ -68,7 +68,33 @@ namespace eNutridealWebservice
             }
             return refeicoes;
         }
-        
+
+
+        public List<Refeicao> GetRefeicaoPorItem(string item)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(FILEPATH);
+            XmlNodeList refeicaoNodes = doc.SelectNodes("/refeicoes/refeicao[item='" + item +
+           "']");
+            List<Refeicao> refeicoes = new List<Refeicao>();
+            foreach (XmlNode refeicaoNode in refeicaoNodes)
+            {
+
+                XmlNode restauranteNode = refeicaoNode.SelectSingleNode("restaurante");
+                XmlNode itemNode = refeicaoNode.SelectSingleNode("item");
+                XmlNode quantidadeNode = refeicaoNode.SelectSingleNode("quantidade");
+                XmlNode caloriasNode = refeicaoNode.SelectSingleNode("calorias");
+                Refeicao refeicao = new Refeicao(
+                restauranteNode.InnerText,
+                itemNode.InnerText,
+                quantidadeNode.InnerText,
+                caloriasNode.InnerText
+                );
+                refeicoes.Add(refeicao);
+            }
+            return refeicoes;
+        }
+
         public void AddRefeicao(Refeicao refeicao)
         {
             XmlDocument doc = new XmlDocument();

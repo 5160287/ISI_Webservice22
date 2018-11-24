@@ -24,7 +24,16 @@ namespace eNutridealWebservice
         [OperationContract(Name = "GetRefeicaoPorRestaurante")]
         [WebInvoke(Method = "GET", UriTemplate = "/refeicoes/{restaurante}")]
         [Description("Obter refeições de determinado restaurante.")]
-        List<Refeicao> GetRefeicao(string restaurante);
+        List<Refeicao> GetRefeicaoPorRestaurante(string restaurante);
+
+
+        // Get refeicao por restaurante
+        [OperationContract(Name = "GetRefeicaoPorItem")]
+        [WebInvoke(Method = "GET", UriTemplate = "/refeicoes/{item}")]
+        [Description("Obter o resultado de uma pesquisa através de Refeição/Item.")]
+        List<Refeicao> GetRefeicaoPorItem(string item);
+
+        
 
         // ADD REFEICAO , com instância da classe Refeição
         [OperationContract]

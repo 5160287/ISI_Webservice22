@@ -6,4 +6,250 @@
     <quantidade>1 hamburguer tamanho grande</quantidade>
     <calorias>780 cal</calorias>
   </refeicao>
+  <refeicao>
+    <restaurante>restaurante</restaurante>
+    <item>Item</item>
+    <quantidade>Quantidade</quantidade>
+    <calorias>Calorias</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>Hambúrguer bem Passado</item>
+    <quantidade>1 dose (200g)</quantidade>
+    <calorias>304 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>Limonada sem Açúcar</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>10 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>H3 Arroz</item>
+    <quantidade>1/2 dose</quantidade>
+    <calorias>195 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>Batatas Fritas (1/2 dose)</item>
+    <quantidade>1/2 dose</quantidade>
+    <calorias>274 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>H3 Esparregado</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>116 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>Hambúrguer Médio</item>
+    <quantidade>1 dose (200g)</quantidade>
+    <calorias>354 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>Batatas Fritas</item>
+    <quantidade>1 dose (75g)</quantidade>
+    <calorias>411 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>H3 Arroz (1/2 dose)</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>390 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>Limonada de Morango sem Açúcar</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>14 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>H3 Grelado</item>
+    <quantidade>1 hambúrguer (200g)</quantidade>
+    <calorias>304 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>H3 Mediterrãneo</item>
+    <quantidade>1 hambúrguer (180g)</quantidade>
+    <calorias>441 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>H3 Cheese</item>
+    <quantidade>1 hambúrguer (180g)</quantidade>
+    <calorias>464 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>H3 Champignon</item>
+    <quantidade>1 hambúrguer (200g)</quantidade>
+    <calorias>421 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>Tuga</item>
+    <quantidade>1 hambúrguer (180g)</quantidade>
+    <calorias>424 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>H3 Benedict</item>
+    <quantidade>1 hambúrguer (100g)</quantidade>
+    <calorias>553 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>H3 Tuga</item>
+    <quantidade>1 dose (180g)</quantidade>
+    <calorias>424 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>H3 Legumes</item>
+    <quantidade>1 hambúrguer</quantidade>
+    <calorias>460 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>Super Bread</item>
+    <quantidade>1 hambúrguer (380g)</quantidade>
+    <calorias>836 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>H3 Carbonara</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>546 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>h3</restaurante>
+    <item>Vinagreta Dijon</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>83 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Batatas Fritas (Média)</item>
+    <quantidade>1 dose (100g)</quantidade>
+    <calorias>340 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Big Mac</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>510 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Batatas Fritas (Pequena)</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>240 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Double Cheeseburguer</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>448 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Cheeseburger</item>
+    <quantidade>1 dose (120g)</quantidade>
+    <calorias>305 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Chicken McNuggets (4)</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>179 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Batatas Fritas (Grande)</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>448 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>McFlurry Snickers</item>
+    <quantidade>1 dose (187g)</quantidade>
+    <calorias>375 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Big Tasty</item>
+    <quantidade>1 dose (345g)</quantidade>
+    <calorias>842 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>CBO</item>
+    <quantidade>1 dose (247g)</quantidade>
+    <calorias>665 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Coca-Cola (Média)</item>
+    <quantidade>1 dose (400ml)</quantidade>
+    <calorias>176 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Sopa de Grão com Espinafres</item>
+    <quantidade>1 dose (150ml)</quantidade>
+    <calorias>75 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Sundae de Caramelo</item>
+    <quantidade>1 dose (184g)</quantidade>
+    <calorias>325 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Ketchup para Batatas</item>
+    <quantidade>1 dose (12g)</quantidade>
+    <calorias>12 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Wrap Ranch</item>
+    <quantidade>1 dose (119g)</quantidade>
+    <calorias>315 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>McChicken</item>
+    <quantidade>1 dose (184g)</quantidade>
+    <calorias>410 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>McFlurry Oreo</item>
+    <quantidade>1 dose (218g)</quantidade>
+    <calorias>345 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Molho para Batatas</item>
+    <quantidade>1 dose (25ml)</quantidade>
+    <calorias>46 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Coca-Cola Zero (Pequena)</item>
+    <quantidade>1 dose (250ml)</quantidade>
+    <calorias>1 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>mcdonalds</restaurante>
+    <item>Croissant Fiambre</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>178 kcal</calorias>
+  </refeicao>
 </refeicoes>
