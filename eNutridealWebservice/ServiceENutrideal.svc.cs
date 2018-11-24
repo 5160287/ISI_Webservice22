@@ -116,13 +116,6 @@ namespace eNutridealWebservice
         }
 
 
-
-
-
-
-
-
-
         public void DeleteRefeicao(string item) {
             XmlDocument doc = new XmlDocument();
             doc.Load(FILEPATH);
