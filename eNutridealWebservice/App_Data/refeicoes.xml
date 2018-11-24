@@ -1,12 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <refeicoes>
   <refeicao>
-    <restaurante>TiMaria</restaurante>
-    <item>Double Cheese Gigante à TiMaria</item>
-    <quantidade>1 hamburguer tamanho grande</quantidade>
-    <calorias>780 cal</calorias>
-  </refeicao>
-  <refeicao>
     <restaurante>restaurante</restaurante>
     <item>Item</item>
     <quantidade>Quantidade</quantidade>
