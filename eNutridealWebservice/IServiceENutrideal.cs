@@ -26,20 +26,22 @@ namespace eNutridealWebservice
         [Description("Obter refeições de determinado restaurante.")]
         List<Refeicao> GetRefeicao(string restaurante);
 
-        // ADD SINGLE REFEICAO
+        // ADD REFEICAO , com instância da classe Refeição
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/refeicao")]
+        [WebInvoke(Method = "POST", UriTemplate = "/refeicao2")]
         [Description("Adicionar Refeição ao eNutrideal.")]
         void AddRefeicao(Refeicao refeicao);
 
-        // ADD REFEICOES FROM DOCS, juntamente com o método "CriaXML"
+        // ADD REFEICOES FROM DOCS
         [OperationContract(Name = "ConverteParaXML")]
         [WebInvoke(Method = "GET", UriTemplate = "/refeicoesToXml")]
         [Description("Permite ao client passar a informalção parsed, e o servidor adiciona esses dados à BD constante de um doc XML")]
         void ConverteParaXML();
 
-        // Método complementar do método "ConverteParaXML" ( recebe os atributos e produz o XML)
+        // ADD REFEICAO , através de strings e não uma instância de Refeição
         [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "/refeicao")]
+        [Description("Adicionar Refeição ao eNutrideal.")]
         void CriaXML(string restaurante, string item, string quantidade, string calorias);
 
         //Operações que permitem passar a informação parsed do lado do client para o server
