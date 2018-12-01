@@ -12,7 +12,6 @@ namespace eNutridealWebservice
     [ServiceContract]
     public interface IServiceENutrideal
     {
-        //testeeee2
 
         // GET RECEICOES
         [OperationContract]
@@ -27,7 +26,7 @@ namespace eNutridealWebservice
         List<Refeicao> GetRefeicaoPorRestaurante(string restaurante);
 
 
-        // Get refeicao por restaurante
+        // Get refeicao por nome
         [OperationContract(Name = "GetRefeicaoPorItem")]
         [WebInvoke(Method = "GET", UriTemplate = "/refeicoes/{item}")]
         [Description("Obter o resultado de uma pesquisa através de Refeição/Item.")]
@@ -44,7 +43,7 @@ namespace eNutridealWebservice
         // ADD REFEICOES FROM DOCS
         [OperationContract(Name = "ConverteParaXML")]
         [WebInvoke(Method = "GET", UriTemplate = "/refeicoesToXml")]
-        [Description("Permite ao client passar a informalção parsed, e o servidor adiciona esses dados à BD constante de um doc XML")]
+        [Description("Permite ao cliente passar a informarção parsed, e o servidor adiciona esses dados à BD constante de um doc XML")]
         void ConverteParaXML();
 
         // ADD REFEICAO , através de strings e não uma instância de Refeição
@@ -69,23 +68,27 @@ namespace eNutridealWebservice
         [Description("Apagar refeicao por nome(item).")]
         void DeleteRefeicao(string item);
 
-        //CALCULADORAS
+        //CALCULADORA PRINCIPAL
 
-        //PESO IDEAL
         [OperationContract]
-        double CalcularPesoIdeal(int idade, int altura, string genero);
+        double Calculadora(DadosPessoais dados);
 
-        //CALORIAS POR DIA
-        [OperationContract]
-        double CalcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade);
-        //PLANO CALORICO
+        /*
+    //PESO IDEAL
+    [OperationContract]
+    double CalcularPesoIdeal(int idade, int altura, string genero);
 
-       
+    //CALORIAS POR DIA
+    [OperationContract]
+    double CalcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade);
+    //PLANO CALORICO
+    */
 
 
-        
 
-        
+
+
+
 
 
         /*
