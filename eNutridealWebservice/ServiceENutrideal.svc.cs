@@ -119,7 +119,19 @@ namespace eNutridealWebservice
             doc.Save(FILEPATH);
         }
 
+        public void recebeRefeicao(Refeicao refeicao)
+        {
+            Refeicao.listRefeicoes.Add(refeicao);
+        }
 
+        public void addListRefeicoesToXML()
+        {
+            for (int i = 0; i <= Refeicao.listRefeicoes.Count - 1; i++)
+            {
+                AddRefeicao(Refeicao.listRefeicoes[i]);
+            }
+            Refeicao.listRefeicoes.Clear();
+        }
 
         public void CriaXML(string restaurante, string item, string quantidade, string calorias)
         {
@@ -142,7 +154,6 @@ namespace eNutridealWebservice
             refeicoesNode.AppendChild(refeicaoNode);
             doc.Save(FILEPATH);
         }
-
 
         public void DeleteRefeicao(string item) {
             XmlDocument doc = new XmlDocument();
@@ -314,76 +325,6 @@ namespace eNutridealWebservice
         }
 
         */
-
-
-
-        public void RecebeRestaurante(string restaurante)
-        {
-            Refeicao.listRestaurantes.Add(restaurante);
-        }
-
-        public void RecebeItem(string item)
-        {
-            Refeicao.listItems.Add(item);
-        }
-
-        public void RecebeQuantidade(string quantidade)
-        {
-            Refeicao.listQuantidades.Add(quantidade);
-        }
-
-        public void RecebeCaloria(string caloria)
-        {
-            Refeicao.listCalorias.Add(caloria);
-        }
-
-
-
-
-        public void ConverteParaXML()
-        {
-            
-            for (int i = 0; i <= Refeicao.listRestaurantes.Count - 1; i++)
-            {
-                CriaXML(Refeicao.listRestaurantes[i], Refeicao.listItems[i], Refeicao.listQuantidades[i], Refeicao.listCalorias[i]);
-            }
-
-            Refeicao.listRestaurantes.Clear();
-            Refeicao.listItems.Clear();
-            Refeicao.listQuantidades.Clear();
-            Refeicao.listRestaurantes.Clear();
-
-        }
-
-
-
-
-
-        /*
-
-        public List<string> RecebeListaRestaurantes (List<string> listRestaurantes)
-        {
-            return listRestaurantes;
-        }
-
-        public List<string> RecebeListaQuantidades(List<string> listQuantidades)
-        {
-            return listQuantidades;
-        }
-
-        public List<string> RecebesListaCalorias(List<string> listCalorias)
-        {
-            return listCalorias;
-        }
-        */
-
-
-
-
-
-
-
-
 
     }
 }
