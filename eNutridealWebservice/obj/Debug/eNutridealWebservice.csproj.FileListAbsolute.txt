@@ -28,3 +28,11 @@ C:\Users\Carla\Desktop\ISI\eNutrideal\ISI_Webservice22\eNutridealWebservice\obj\
 C:\Users\Carla\Desktop\ISI\eNutrideal\ISI_Webservice22\eNutridealWebservice\obj\Debug\eNutridealWebservice.csproj.CoreCompileInputs.cache
 C:\Users\Carla\Desktop\ISI\eNutrideal\ISI_Webservice22\eNutridealWebservice\obj\Debug\eNutridealWebservice.dll
 C:\Users\Carla\Desktop\ISI\eNutrideal\ISI_Webservice22\eNutridealWebservice\obj\Debug\eNutridealWebservice.pdb
+C:\Users\Ruben\Desktop\ProjetosGit\ISI_Webservice22\eNutridealWebservice\bin\App_Data\refeicoes.xml
+C:\Users\Ruben\Desktop\ProjetosGit\ISI_Webservice22\eNutridealWebservice\bin\eNutridealWebservice.dll.config
+C:\Users\Ruben\Desktop\ProjetosGit\ISI_Webservice22\eNutridealWebservice\bin\eNutridealWebservice.dll
+C:\Users\Ruben\Desktop\ProjetosGit\ISI_Webservice22\eNutridealWebservice\bin\eNutridealWebservice.pdb
+C:\Users\Ruben\Desktop\ProjetosGit\ISI_Webservice22\eNutridealWebservice\obj\Debug\eNutridealWebservice.csprojAssemblyReference.cache
+C:\Users\Ruben\Desktop\ProjetosGit\ISI_Webservice22\eNutridealWebservice\obj\Debug\eNutridealWebservice.csproj.CoreCompileInputs.cache
+C:\Users\Ruben\Desktop\ProjetosGit\ISI_Webservice22\eNutridealWebservice\obj\Debug\eNutridealWebservice.dll
+C:\Users\Ruben\Desktop\ProjetosGit\ISI_Webservice22\eNutridealWebservice\obj\Debug\eNutridealWebservice.pdb

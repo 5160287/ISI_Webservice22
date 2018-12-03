@@ -32,35 +32,26 @@ namespace eNutridealWebservice
         [Description("Obter o resultado de uma pesquisa através de Refeição/Item.")]
         List<Refeicao> GetRefeicaoPorItem(string item);
 
-        
-
         // ADD REFEICAO , com instância da classe Refeição
-        [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/refeicao2")]
-        [Description("Adicionar Refeição ao eNutrideal.")]
-        void AddRefeicao(Refeicao refeicao);
-
-        // ADD REFEICOES FROM DOCS
-        [OperationContract(Name = "ConverteParaXML")]
-        [WebInvoke(Method = "GET", UriTemplate = "/refeicoesToXml")]
-        [Description("Permite ao cliente passar a informarção parsed, e o servidor adiciona esses dados à BD constante de um doc XML")]
-        void ConverteParaXML();
-
-        // ADD REFEICAO , através de strings e não uma instância de Refeição
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "/refeicao")]
         [Description("Adicionar Refeição ao eNutrideal.")]
-        void CriaXML(string restaurante, string item, string quantidade, string calorias);
+        void AddRefeicao(Refeicao refeicao);
 
-        //Operações que permitem passar a informação parsed do lado do client para o server
         [OperationContract]
-        void RecebeItem(string item);
+        [WebInvoke(Method = "POST", UriTemplate = "/refeicoesToXML")]
+        [Description("Adiciona lista de refeições contida no servidor no XML")]
+        void addListRefeicoesToXML();
+
         [OperationContract]
-        void RecebeRestaurante(string restaurante);
+        void recebeRefeicao(Refeicao refeicao);
+        ////
+
+        // ADD  SINGLE REFEICAO , através de strings e não uma instância de Refeição
         [OperationContract]
-        void RecebeCaloria(string caloria);
-        [OperationContract]
-        void RecebeQuantidade(string quantidade);
+        [WebInvoke(Method = "POST", UriTemplate = "/refeicao2")]
+        [Description("Adicionar Refeição ao eNutrideal.")]
+        void CriaXML(string restaurante, string item, string quantidade, string calorias);
 
         // DELETE REFEICAO
         [OperationContract(Name = "ApagarRefeicaoPorItem")]
@@ -83,32 +74,6 @@ namespace eNutridealWebservice
     double CalcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade);
     //PLANO CALORICO
     */
-
-
-
-
-
-
-
-
-        /*
-                [OperationContract]
-                List<string> RecebeListaRestaurantes(List<string> listRestaurantes);
-
-                [OperationContract]
-                List<string> RecebeListaItems(List<string> listItems);
-
-                [OperationContract]
-                List<string> RecebeListaQuantidades(List<string> listQuantidades);
-
-                [OperationContract]
-                List<string> RecebesListaCalorias(List<string> listCalorias);
-        */
-
-
-
-
-
     }
 
 
@@ -130,16 +95,8 @@ namespace eNutridealWebservice
         public string Quantidade { get; set; }
         [DataMember]
         public string Calorias { get; set; }
-
-
         [DataMember]
-        public static List<string> listRestaurantes = new List<string>();
-        [DataMember]
-        public static List<string> listItems = new List<string>();
-        [DataMember]
-        public static List<string> listQuantidades = new List<string>();
-        [DataMember]
-        public static List<string> listCalorias = new List<string>();
+        public static List<Refeicao> listRefeicoes = new List<Refeicao>();
 
         public override string ToString()
         {
