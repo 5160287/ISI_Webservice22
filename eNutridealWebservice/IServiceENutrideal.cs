@@ -59,21 +59,23 @@ namespace eNutridealWebservice
         [Description("Apagar refeicao por nome(item).")]
         void DeleteRefeicao(string item);
 
-        //CALCULADORA PRINCIPAL
+        //CALCULADORAS
+
+        
+        
+        //PESO IDEAL
+        [OperationContract]
+        double CalcularPesoIdeal(int idade, int altura, string genero);
+
+        //CALORIAS POR DIA
+        [OperationContract]
+        double CalcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade);
+        //PLANO CALORICO
 
         [OperationContract]
-        double Calculadora(DadosPessoais dados);
+        int CalcularPlanoCalorico(int pesoIdeal, double caloriasDia);
 
-        /*
-    //PESO IDEAL
-    [OperationContract]
-    double CalcularPesoIdeal(int idade, int altura, string genero);
 
-    //CALORIAS POR DIA
-    [OperationContract]
-    double CalcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade);
-    //PLANO CALORICO
-    */
     }
 
 
@@ -108,6 +110,8 @@ namespace eNutridealWebservice
             return res;
         }
     }
+
+    /*
     [DataContract]
     public class DadosPessoais
     {
@@ -125,5 +129,6 @@ namespace eNutridealWebservice
 
         [DataMember]
         public string NivelAtividade { get; set; }
+        */
     }
 }

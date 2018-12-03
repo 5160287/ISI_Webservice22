@@ -168,85 +168,14 @@ namespace eNutridealWebservice
         }
 
 
-        public double Calculadora(DadosPessoais dados)
+        public int CalcularPlanoCalorico(int pesoIdeal, double caloriasDia)
         {
-
-            double resultadoPesoIdal = 0;
-
-            if (dados.Genero.Equals("Masculino"))
-            {
-
-                if (dados.Altura <= 152.4)
-                {
-                    resultadoPesoIdal = 52;
-                }
-                else
-                {
-                    resultadoPesoIdal = 52 + (0.7480) * (dados.Altura - 152.4);
-                }
-            }
-
-            if (dados.Genero.Equals("Feminino"))
-            {
-
-                if (dados.Altura <= 152.4)
-                {
-                    resultadoPesoIdal = 49;
-                }
-                else
-                {
-                    resultadoPesoIdal = 49 + (0.66929) * (dados.Altura - 152.4);
-                }
-            }
-            return resultadoPesoIdal;
-
-
-
-            double resultadoIncompleto = 0;
-            double resultadoCaloriasDia = 0;
-
-            if (dados.Genero.Equals("Masculino"))
-            {
-
-                resultadoIncompleto = 10 * dados.Peso + 6.25 * dados.Altura - 5 * dados.Idade + 5;
-
-                //10xpeso +6.25 x altura – 5 x idade + 5;
-            }
-            else
-            {
-                resultadoIncompleto = 10 * dados.Peso + 6.25 * dados.Altura - 5 * dados.Idade - 161;
-            }
-
-
-            if (dados.NivelAtividade.Equals("Sedentário"))
-            {
-                resultadoCaloriasDia = resultadoIncompleto * 1.2;
-            }
-
-            if (dados.NivelAtividade.Equals("Ligeiramente Ativo(a)"))
-            {
-                resultadoCaloriasDia = resultadoIncompleto * 1.375;
-            }
-
-            if (dados.NivelAtividade.Equals("Moderadamente Ativo(a)"))
-            {
-                resultadoCaloriasDia = resultadoIncompleto * 1.550;
-            }
-
-            if (dados.NivelAtividade.Equals("Muito Ativo(a)"))
-            {
-                resultadoCaloriasDia = resultadoIncompleto * 1.725;
-            }
-
-            if (dados.NivelAtividade.Equals("Extraordinariamente Ativo(a)"))
-            {
-                resultadoCaloriasDia = resultadoIncompleto * 1.9;
-            }
-
-            return resultadoCaloriasDia;
+            int semanas;
+           
+            return semanas;
         }
 
-        /*
+        
         public double CalcularPesoIdeal(int idade, int altura, string genero)
         {
             double resultado_final = 0;
@@ -324,7 +253,7 @@ namespace eNutridealWebservice
             return resultado_final;
         }
 
-        */
+        
 
     }
 }
