@@ -72,8 +72,8 @@ namespace eNutridealWebservice
         double CalcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade);
         //PLANO CALORICO
 
-        [OperationContract]
-        int CalcularPlanoCalorico(int pesoIdeal, double caloriasDia);
+        //[OperationContract]
+        //int CalcularPlanoCalorico(int pesoIdeal, double caloriasDia);
 
 
     }
@@ -131,4 +131,4 @@ namespace eNutridealWebservice
         public string NivelAtividade { get; set; }
         */
     }
-}
+

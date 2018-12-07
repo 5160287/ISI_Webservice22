@@ -167,13 +167,13 @@ namespace eNutridealWebservice
             }
         }
 
-
+        /*
         public int CalcularPlanoCalorico(int pesoIdeal, double caloriasDia)
         {
             int semanas;
            
             return semanas;
-        }
+        }*/
 
         
         public double CalcularPesoIdeal(int idade, int altura, string genero)
