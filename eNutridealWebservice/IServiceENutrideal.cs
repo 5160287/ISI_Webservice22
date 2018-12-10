@@ -28,7 +28,7 @@ namespace eNutridealWebservice
 
         // Get refeicao por nome
         [OperationContract(Name = "GetRefeicaoPorItem")]
-        [WebInvoke(Method = "GET", UriTemplate = "/refeicoes/{item}")]
+        [WebInvoke(Method = "GET", UriTemplate = "/refeicao/{item}")]
         [Description("Obter o resultado de uma pesquisa através de Refeição/Item.")]
         List<Refeicao> GetRefeicaoPorItem(string item);
 
@@ -49,9 +49,13 @@ namespace eNutridealWebservice
 
         // ADD  SINGLE REFEICAO , através de strings e não uma instância de Refeição
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/refeicao2")]
+        [WebInvoke(Method = "POST", UriTemplate = "/refeicao2", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
+       //[WebInvoke(Method = "POST", UriTemplate = "/refeicao2")]
         [Description("Adicionar Refeição ao eNutrideal.")]
         void CriaXML(string restaurante, string item, string quantidade, string calorias);
+
+
+
 
         // DELETE REFEICAO
         [OperationContract(Name = "ApagarRefeicaoPorItem")]
@@ -65,10 +69,12 @@ namespace eNutridealWebservice
         
         //PESO IDEAL
         [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "/pesoIdeal", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
         double CalcularPesoIdeal(int idade, int altura, string genero);
 
         //CALORIAS POR DIA
         [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "/caloriasDia", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
         double CalcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade);
         //PLANO CALORICO
 
