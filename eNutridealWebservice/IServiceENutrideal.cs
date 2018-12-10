@@ -50,7 +50,7 @@ namespace eNutridealWebservice
         // ADD  SINGLE REFEICAO , através de strings e não uma instância de Refeição
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "/refeicao2", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
-       //[WebInvoke(Method = "POST", UriTemplate = "/refeicao2")]
+        //[WebInvoke(Method = "POST", UriTemplate = "/refeicao2")]
         [Description("Adicionar Refeição ao eNutrideal.")]
         void CriaXML(string restaurante, string item, string quantidade, string calorias);
 
@@ -65,8 +65,8 @@ namespace eNutridealWebservice
 
         //CALCULADORAS
 
-        
-        
+
+
         //PESO IDEAL
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "/pesoIdeal", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
@@ -78,8 +78,9 @@ namespace eNutridealWebservice
         double CalcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade);
         //PLANO CALORICO
 
-        //[OperationContract]
-        //int CalcularPlanoCalorico(int pesoIdeal, double caloriasDia);
+        [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "/planoCalorico", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
+        string CalcularPlanoCalorico(double peso, double pesoIdeal, double caloriasDiaParaManter);
 
 
     }
@@ -117,6 +118,7 @@ namespace eNutridealWebservice
         }
     }
 
+
     /*
     [DataContract]
     public class DadosPessoais
@@ -135,6 +137,8 @@ namespace eNutridealWebservice
 
         [DataMember]
         public string NivelAtividade { get; set; }
-        */
     }
+    */
+
+}
 

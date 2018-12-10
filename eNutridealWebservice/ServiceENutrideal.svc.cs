@@ -169,15 +169,43 @@ namespace eNutridealWebservice
             }
         }
 
-        /*
-        public int CalcularPlanoCalorico(int pesoIdeal, double caloriasDia)
-        {
-            int semanas;
-           
-            return semanas;
-        }*/
 
-        
+        public string CalcularPlanoCalorico(double peso, double pesoIdeal, double caloriasDiaParaManter)
+        {
+            double calorias;
+            double semanas;
+            double plano;
+            double diferençaPesos;
+            string resultado="";
+
+            if(peso> pesoIdeal)
+            {
+                plano = caloriasDiaParaManter - 500;
+                diferençaPesos = pesoIdeal - peso;
+                semanas = diferençaPesos / 0.5;
+                resultado = "Deverá consumir "+ plano +" calorias/dia durante " +semanas+ " semanas para atingir o seu peso ideal";
+            }
+            if (peso < pesoIdeal)
+            {
+                plano = caloriasDiaParaManter + 500;
+                diferençaPesos = pesoIdeal - peso;
+                semanas = diferençaPesos / 0.5;
+                resultado = "Deverá consumir " + plano + " calorias/dia durante " + semanas + " semanas para atingir o seu peso ideal";
+            }
+
+            if (peso == pesoIdeal)
+            {
+                plano = caloriasDiaParaManter;
+                diferençaPesos = pesoIdeal - peso;
+                semanas = diferençaPesos / 0.5;
+                resultado = "Já se encontra no seu peso ideal , deverá consumir " + plano + " calorias por dia para o manter";
+            }
+
+            return resultado;
+        }
+
+
+
         public double CalcularPesoIdeal(int idade, int altura, string genero)
         {
             double resultado_final = 0;
