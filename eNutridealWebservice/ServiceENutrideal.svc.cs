@@ -183,14 +183,16 @@ namespace eNutridealWebservice
                 plano = caloriasDiaParaManter - 500;
                 diferençaPesos = pesoIdeal - peso;
                 semanas = diferençaPesos / 0.5;
-                resultado = "Deverá consumir "+ plano +" calorias/dia durante " +semanas+ " semanas para atingir o seu peso ideal";
+                resultado = "De forma a que emagreça 0,5kg por semana deverá consumir "+ plano +" calorias/dia durante " +semanas+ " semanas para atingir o seu peso ideal";
+
+                
             }
             if (peso < pesoIdeal)
             {
                 plano = caloriasDiaParaManter + 500;
                 diferençaPesos = pesoIdeal - peso;
                 semanas = diferençaPesos / 0.5;
-                resultado = "Deverá consumir " + plano + " calorias/dia durante " + semanas + " semanas para atingir o seu peso ideal";
+                resultado = "De forma a que engorde 0,5kg por semana deverá consumir " + plano + " calorias/dia durante " + semanas + " semanas para atingir o seu peso ideal";
             }
 
             if (peso == pesoIdeal)
