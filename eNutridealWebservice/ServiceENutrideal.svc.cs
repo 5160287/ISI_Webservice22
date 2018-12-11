@@ -177,13 +177,17 @@ namespace eNutridealWebservice
             double plano;
             double diferençaPesos;
             string resultado="";
+            double semanasAbsolutas;
+            double semanasArredondadas;
 
-            if(peso> pesoIdeal)
+            if (peso> pesoIdeal)
             {
                 plano = caloriasDiaParaManter - 500;
                 diferençaPesos = pesoIdeal - peso;
                 semanas = diferençaPesos / 0.5;
-                resultado = "De forma a que emagreça 0,5kg por semana deverá consumir "+ plano +" calorias/dia durante " +semanas+ " semanas para atingir o seu peso ideal";
+                semanasAbsolutas = Math.Abs(semanas);
+                semanasArredondadas = Math.Round(semanasAbsolutas, MidpointRounding.AwayFromZero);
+                resultado = "De forma a que emagreça 0,5kg por semana deverá consumir "+ plano +" calorias/dia durante " + semanasArredondadas + " semanas para atingir o seu peso ideal";
 
                 
             }
@@ -192,7 +196,9 @@ namespace eNutridealWebservice
                 plano = caloriasDiaParaManter + 500;
                 diferençaPesos = pesoIdeal - peso;
                 semanas = diferençaPesos / 0.5;
-                resultado = "De forma a que engorde 0,5kg por semana deverá consumir " + plano + " calorias/dia durante " + semanas + " semanas para atingir o seu peso ideal";
+                semanasAbsolutas = Math.Abs(semanas);
+                semanasArredondadas = Math.Round(semanasAbsolutas, MidpointRounding.AwayFromZero);
+                resultado = "De forma a que engorde 0,5kg por semana deverá consumir " + plano + " calorias/dia durante " + semanasArredondadas + " semanas para atingir o seu peso ideal";
             }
 
             if (peso == pesoIdeal)
@@ -200,6 +206,7 @@ namespace eNutridealWebservice
                 plano = caloriasDiaParaManter;
                 diferençaPesos = pesoIdeal - peso;
                 semanas = diferençaPesos / 0.5;
+                Math.Abs(semanas);
                 resultado = "Já se encontra no seu peso ideal , deverá consumir " + plano + " calorias por dia para o manter";
             }
 
