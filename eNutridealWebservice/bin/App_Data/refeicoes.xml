@@ -576,4 +576,340 @@
     <quantidade>1 muffin (135g)</quantidade>
     <calorias>470 kcal</calorias>
   </refeicao>
+  <refeicao>
+    <restaurante>kfc</restaurante>
+    <item>Pedaço de Frango</item>
+    <quantidade>1 pedaço (93g)</quantidade>
+    <calorias>197 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>kfc</restaurante>
+    <item>Hot Wings</item>
+    <quantidade>2 hot wings (70g)</quantidade>
+    <calorias>188 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>kfc</restaurante>
+    <item>Brazer</item>
+    <quantidade>1 sanduíche (273g)</quantidade>
+    <calorias>526 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>kfc</restaurante>
+    <item>Tower</item>
+    <quantidade>1 dose (258g)</quantidade>
+    <calorias>639 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>kfc</restaurante>
+    <item>Twister</item>
+    <quantidade>1 dose (209g)</quantidade>
+    <calorias>510 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>kfc</restaurante>
+    <item>Daddy Burger</item>
+    <quantidade>1 unidade (273g)</quantidade>
+    <calorias>615 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>noori</restaurante>
+    <item>Box Salmão</item>
+    <quantidade>1 box (2 unidades)</quantidade>
+    <calorias>167 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>noori</restaurante>
+    <item>Spicy Tuna</item>
+    <quantidade>1 dose (150g)</quantidade>
+    <calorias>176 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>pans-amp-company</restaurante>
+    <item>Pasta de Atum</item>
+    <quantidade>1 sandes (260g)</quantidade>
+    <calorias>779 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>pans-amp-company</restaurante>
+    <item>Sandes Supremo de Frango</item>
+    <quantidade>1 sandes (247g)</quantidade>
+    <calorias>640 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>pans-amp-company</restaurante>
+    <item>Sandes Multicereais Queijo Fresco</item>
+    <quantidade>1 sandes (275g)</quantidade>
+    <calorias>375 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>pans-amp-company</restaurante>
+    <item>Frango</item>
+    <quantidade>1 baguette (223g)</quantidade>
+    <calorias>469 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>pans-amp-company</restaurante>
+    <item>Provençal</item>
+    <quantidade>1 sandes (233g)</quantidade>
+    <calorias>531 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>pizza-hut</restaurante>
+    <item>Cheeseham</item>
+    <quantidade>1 fatia (130g)</quantidade>
+    <calorias>342 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>pizza-hut</restaurante>
+    <item>Pão de Alho Supremo</item>
+    <quantidade>2 fatias (103g)</quantidade>
+    <calorias>310 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>pizza-hut</restaurante>
+    <item>Calzone Gamberi</item>
+    <quantidade>1 dose (444g)</quantidade>
+    <calorias>497 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>pizza-hut</restaurante>
+    <item>Mousse de Chocolate</item>
+    <quantidade>1 mousse (70g)</quantidade>
+    <calorias>286 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>starbucks</restaurante>
+    <item>Salada de Frutas</item>
+    <quantidade>100g</quantidade>
+    <calorias>53 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>starbucks</restaurante>
+    <item>Frappuccino de Caramelo (Tall)</item>
+    <quantidade>1 dose (354ml)</quantidade>
+    <calorias>250 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>starbucks</restaurante>
+    <item>Café Latte (Tall)</item>
+    <quantidade>1 dose (250ml)</quantidade>
+    <calorias>100 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>starbucks</restaurante>
+    <item>Caramel Macchiato (Grande)</item>
+    <quantidade>1 dose (473ml)</quantidade>
+    <calorias>239 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>starbucks</restaurante>
+    <item>Chocolate Mocha Flavour</item>
+    <quantidade>100ml</quantidade>
+    <calorias>63 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>starbucks</restaurante>
+    <item>Muffin de Mirtilos</item>
+    <quantidade>1 muffin (135g)</quantidade>
+    <calorias>470 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>starbucks</restaurante>
+    <item>Cinnamon Roll</item>
+    <quantidade>1 rolo (118g)</quantidade>
+    <calorias>420 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>starbucks</restaurante>
+    <item>Chocolate Chunk Cookie</item>
+    <quantidade>1 dose (84g)</quantidade>
+    <calorias>380 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>starbucks</restaurante>
+    <item>Seattle Latte</item>
+    <quantidade>100ml</quantidade>
+    <calorias>70 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>starbucks</restaurante>
+    <item>Vanilla Macchiato (Tall)</item>
+    <quantidade>1 dose (350ml)</quantidade>
+    <calorias>185 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>subway</restaurante>
+    <item>15 cm Frango Teriyaki</item>
+    <quantidade>1 dose (279g)</quantidade>
+    <calorias>384 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>subway</restaurante>
+    <item>15 cm Atum</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>414 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>subway</restaurante>
+    <item>Cookie com Gotas de Chocolate</item>
+    <quantidade>1 dose (33g)</quantidade>
+    <calorias>210 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>subway</restaurante>
+    <item>15 cm Subway Melt</item>
+    <quantidade>1 dose (254g)</quantidade>
+    <calorias>380 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>subway</restaurante>
+    <item>15 cm Frango</item>
+    <quantidade>1 dose (241g)</quantidade>
+    <calorias>315 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>subway</restaurante>
+    <item>15 cm Peito de Peru</item>
+    <quantidade>1 dose</quantidade>
+    <calorias>307 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>subway</restaurante>
+    <item>15 cm BMT Italiano</item>
+    <quantidade>1 dose (242g)</quantidade>
+    <calorias>450 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>subway</restaurante>
+    <item>15cm Subway Club</item>
+    <quantidade>1 dose (275g)</quantidade>
+    <calorias>350 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pizza Carbonara</item>
+    <quantidade>1 fatia (76g)</quantidade>
+    <calorias>235 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pastel de Nata</item>
+    <quantidade>100g</quantidade>
+    <calorias>302 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pizza Funny Bacon</item>
+    <quantidade>1 fatia (75g)</quantidade>
+    <calorias>207 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pizza Especial da Casa</item>
+    <quantidade>1 fatia (76g)</quantidade>
+    <calorias>235 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pasta Carbonara</item>
+    <quantidade>100g</quantidade>
+    <calorias>205 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pizza Barbecue</item>
+    <quantidade>1 fatia (84g)</quantidade>
+    <calorias>240 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pizza Atlãntica</item>
+    <quantidade>1 fatia (71g)</quantidade>
+    <calorias>196 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pão de Alho Queijo</item>
+    <quantidade>2 unidades</quantidade>
+    <calorias>367 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pizza Cool Cheese</item>
+    <quantidade>1 fatia (76g)</quantidade>
+    <calorias>204 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pão de Alho com Queijo e Pepperoni</item>
+    <quantidade>2 unidades</quantidade>
+    <calorias>402 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pizza Burguer</item>
+    <quantidade>1 fatia (80g)</quantidade>
+    <calorias>192 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pão de Alho com Queijo e Azeitonas</item>
+    <quantidade>2 unidades</quantidade>
+    <calorias>353 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Profiteroles</item>
+    <quantidade>100g</quantidade>
+    <calorias>381 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pizza Lasanha de Carne</item>
+    <quantidade>1 fatia (80g)</quantidade>
+    <calorias>226 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Enrolado Barbecue</item>
+    <quantidade>1 dose (247g)</quantidade>
+    <calorias>538 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pizza Bacana</item>
+    <quantidade>100g</quantidade>
+    <calorias>270 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Top Burguer Vaca</item>
+    <quantidade>100g</quantidade>
+    <calorias>236 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Pizza Formaggio</item>
+    <quantidade>1 fatia (76g)</quantidade>
+    <calorias>237 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Enrolado Carbonara</item>
+    <quantidade>1 dose (182g)</quantidade>
+    <calorias>490 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>telepizza</restaurante>
+    <item>Telekebab</item>
+    <quantidade>100g</quantidade>
+    <calorias>225 kcal</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>Ola</restaurante>
+    <item>Ola</item>
+    <quantidade>123</quantidade>
+    <calorias>123</calorias>
+  </refeicao>
 </refeicoes>

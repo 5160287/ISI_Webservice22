@@ -906,4 +906,16 @@
     <quantidade>100g</quantidade>
     <calorias>225 kcal</calorias>
   </refeicao>
+  <refeicao>
+    <restaurante>Ola</restaurante>
+    <item>Ola</item>
+    <quantidade>123</quantidade>
+    <calorias>123</calorias>
+  </refeicao>
+  <refeicao>
+    <restaurante>Ola222</restaurante>
+    <item>Ola222</item>
+    <quantidade>2222</quantidade>
+    <calorias>2222</calorias>
+  </refeicao>
 </refeicoes>

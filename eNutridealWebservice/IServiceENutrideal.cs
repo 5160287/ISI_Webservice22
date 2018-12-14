@@ -49,8 +49,8 @@ namespace eNutridealWebservice
 
         // ADD  SINGLE REFEICAO , através de strings e não uma instância de Refeição
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/refeicao2", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
-        //[WebInvoke(Method = "POST", UriTemplate = "/refeicao2")]
+        [WebInvoke(Method = "GET", UriTemplate = "/addRefeicao?restaurante={restaurante}&item={item}&quantidade={quantidade}&calorias={calorias}")]
+        //[WebInvoke(Method = "POST", UriTemplate = "/refeicao2", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
         [Description("Adicionar Refeição ao eNutrideal.")]
         void CriaXML(string restaurante, string item, string quantidade, string calorias);
 
@@ -69,17 +69,17 @@ namespace eNutridealWebservice
 
         //PESO IDEAL
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/pesoIdeal", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
+        [WebInvoke(Method = "GET", UriTemplate = "/pesoIdeal?idade={idade}&altura={altura}&genero={genero}")]
         double CalcularPesoIdeal(int idade, int altura, string genero);
 
         //CALORIAS POR DIA
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/caloriasDia", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
+        [WebInvoke(Method = "GET", UriTemplate = "/caloriasDia?idade={idade}&genero={genero}&altura={altura}&peso={peso}&nivelAtividade={nivelAtividade}")]
         double CalcularCaloriasDia(int idade, string genero, int altura, double peso, string nivelAtividade);
         //PLANO CALORICO
 
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/planoCalorico", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
+        [WebInvoke(Method = "GET", UriTemplate = "/planoCalorico?peso={peso}&pesoIdeal={pesoIdeal}&caloriasDiaParaManter={caloriasDiaParaManter}", BodyStyle = WebMessageBodyStyle.WrappedRequest)]
         string CalcularPlanoCalorico(double peso, double pesoIdeal, double caloriasDiaParaManter);
 
 
