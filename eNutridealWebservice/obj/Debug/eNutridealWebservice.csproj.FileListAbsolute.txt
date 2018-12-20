@@ -45,3 +45,4 @@ C:\Users\Ruben\Desktop\ProjetosGitHub\ISI_webservice22\5160287\ISI_Webservice22\
 C:\Users\Ruben\Desktop\ProjetosGitHub\ISI_webservice22\5160287\ISI_Webservice22\eNutridealWebservice\obj\Debug\eNutridealWebservice.dll
 C:\Users\Ruben\Desktop\ProjetosGitHub\ISI_webservice22\5160287\ISI_Webservice22\eNutridealWebservice\obj\Debug\eNutridealWebservice.pdb
 C:\Users\Ruben\Desktop\ProjetosGitHub\ISI_webservice22\5160287\ISI_Webservice22\eNutridealWebservice\bin\Web.config
+C:\Users\Ruben\Desktop\ProjetosGit\ISI_Webservice22\eNutridealWebservice\bin\Web.config
